@@ -640,8 +640,9 @@ fits[,4]<-NA; # set to NA so MCMC estimate the distn for each obs
 
 data1<-rbind(data1,fits);
 
+cat("\nThis provides data.frame data1 which has a head of\n\n");
 print(head(data1));
-print(dim(data1));
+cat("\ndata.frame size=",dim(data1),"\n\n");
 ## final data set is 260 x 4
 
 
