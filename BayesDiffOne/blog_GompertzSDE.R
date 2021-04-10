@@ -5,7 +5,8 @@
 # first clone this repo
 # git clone https://github.com/fraseriainlewis/towardsdatascience.git
 # 
-#
+# the code below creates plot "plotNLSDE1.png" in BayesDiffOne directory
+#########################################################################
 
 rm(list=ls()); # reset workspace
 
@@ -197,7 +198,7 @@ myresGp<-mcmc.list(chain_output[[1]],
                    chain_output[[8]])
 
 # load("mcmcSDE_set2.RData"); #provides myresGp
-save(myresGp,file="mcmcSDE_set2.RData");
+# save(myresGp,file="mcmcSDE_set2.RData");
 
 #########################################################################
 ### Analysis and summary of MCMC results  ###############################
