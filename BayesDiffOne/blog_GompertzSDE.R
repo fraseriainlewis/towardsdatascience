@@ -202,7 +202,7 @@ save(myresGp,file="mcmcSDE_set2.RData");
 #########################################################################
 # some basic good practice MCMC checks
 
-# look for burn-in
+# look for burn-in - check length to be dropped
 plot(window(myresGp[,c("K","a"),],start=1))
 
 # 2K burnin seems fine (on 500 thin)
