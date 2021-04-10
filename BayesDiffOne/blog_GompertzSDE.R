@@ -1,4 +1,12 @@
 
+
+#------------------------------------------------------------------------
+# Run this script from folder "BayesDiffOne"
+# setwd("towardsdatascience/BayesDiffOne");
+# then source this script in R Studio
+# source("blog_GompertzSDE.R");
+#------------------------------------------------------------------------
+
 #########################################################################
 ############ GENERAL SETUP - get the data ###############################
 #########################################################################
@@ -9,9 +17,6 @@
 #########################################################################
 
 rm(list=ls()); # reset workspace
-
-# move into working directory
-setwd("towardsdatascience/BayesDiffOne");
 
 # this loads in the data in a format needed for the modeling
 # this provides data.frame "data1" 
