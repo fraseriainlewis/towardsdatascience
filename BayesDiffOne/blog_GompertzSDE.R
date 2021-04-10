@@ -230,7 +230,7 @@ midFit<-myFits$quantiles[,"50%"]
 #########################################################################
 ############# plot
 interactive<-FALSE;
-if(interactive){png("plotNLSDE1.png",width=480*1.5,height=480*1.5,pointsize=14);}
+if(!interactive){png("plotNLSDE1.png",width=480*1.5,height=480*1.5,pointsize=14);}
 
 # Setup plotting environment - uses classic plot() and par()
 mycol<-"black";
@@ -241,12 +241,12 @@ par(mfrow=c(1,1));
 # end setup
 
 
-plot(data1$Time2[1:231],data1$Observation2[1:231],pch=21,col="green",bg="darkgreen",type="n",axes=FALSE,ylab="",xlab="",xlim=c(0,25))
+plot(data1$Time2[1:231],data1$Observation2[1:231],pch=21,col="skyblue",bg="darkblue",type="n",axes=FALSE,ylab="",xlab="",xlim=c(0,25));#,ylim=c(100,500))
 rect(par("usr")[1],par("usr")[3],par("usr")[2],par("usr")[4],col = "grey90")
 grid(col="grey60")
 
-lines(data1$Time2[1:231],data1$Observation2[1:231],lwd=2,lty=1,col="green");
-points(data1$Time2[1:231],data1$Observation2[1:231],pch=23,col="green",bg="darkgreen");
+lines(data1$Time2[1:231],data1$Observation2[1:231],lwd=2,lty=1,col="skyblue");
+points(data1$Time2[1:231],data1$Observation2[1:231],pch=23,col="skyblue",bg="darkblue");
 
 
 axis(1,seq(0,25,5),padj=0.3,cex.axis=1.5);
@@ -273,7 +273,7 @@ for(i in 1:length(lower)){
     }
 box();
 
-if(interactive){dev.off();}
+if(!interactive){dev.off();}
 
 #############  The END ###################################################
 
