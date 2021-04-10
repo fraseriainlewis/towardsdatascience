@@ -7,5 +7,7 @@
 
 ```bash
 cd towardsdatascience/BayesDiffOne
-R CMD BATCH --vanilla blog_GompertzSDE.R log.R
+R CMD BATCH --vanilla blog_GompertzSDE.R log.R # note as coded this takes ~ 1hr over 8 cpus
+# or source blog_GompertzSDE.R in R Studio 
+# after setting working directory to towardsdatascience/BayesDiffOne
 ```
