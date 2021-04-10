@@ -2,12 +2,14 @@
 #########################################################################
 ############ GENERAL SETUP - get the data ###############################
 #########################################################################
-rm(list=ls()); # reset workspace
-
-# clone this repo
+# first clone this repo
 # git clone https://github.com/fraseriainlewis/towardsdatascience.git
 # 
-# 
+#
+
+rm(list=ls()); # reset workspace
+
+# move into working directory
 setwd("towardsdatascience/BayesDiffOne");
 
 # this loads in the data in a format needed for the modeling
