@@ -41,5 +41,5 @@ $\begin{eqnarray} dX(t)&=&-e^{-t \alpha } K \left(\dfrac{X_0}{K}\right)^{e^{-t \
 
 $\begin{eqnarray} dX(t)&=&-e^{-t \alpha } X(t) \alpha \text{Log}\left[\dfrac{X_0}{K}\right] dt\\&&\hspace{3.35cm} +\hspace{0.2cm}\sigma X(t) dW(t) \end{eqnarray}$
 
-$\begin{eqnarray} dX(t)&=&(a_1 + a_2 t + a_3 X(t))\hspace{0.1cm} dt + \sigma X(t)\hspace{0.1cm} dW(t) \end{eqnarray}$
+$\begin{eqnarray} dX(t)&=&(a_1 + a_2 t + a_3 X(t))\hspace{0.1cm} dt + \sigma \hspace{0.1cm} dW(t) \end{eqnarray}$
 
