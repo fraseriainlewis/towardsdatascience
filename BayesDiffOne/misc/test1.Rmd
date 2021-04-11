@@ -43,3 +43,6 @@ $\begin{eqnarray} dX(t)&=&-e^{-t \alpha } X(t) \alpha \text{Log}\left[\dfrac{X_0
 
 $\begin{eqnarray} dX(t)&=&(a_1 + a_2 t + a_3 X(t))\hspace{0.1cm} dt + \sigma \hspace{0.1cm} dW(t) \end{eqnarray}$
 
+$\begin{eqnarray} da(t)&=& \omega a(t) dt + \sigma dW(t) \end{eqnarray}$
+
+
