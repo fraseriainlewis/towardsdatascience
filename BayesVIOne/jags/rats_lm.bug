@@ -1,0 +1,17 @@
+ model {
+    for (i in 1:N) {
+   
+          mu[i] <- alpha + beta*x[i];
+          Y[i]   ~ dnorm(mu[i],tau.c)
+       }
+       alpha ~ dnorm(alpha.c,tau.alpha);
+       beta  ~ dnorm(beta.c,tau.beta);
+    
+    alpha.c   ~ dnorm(0,1.0E-4);
+    beta.c    ~ dnorm(0,1.0E-4);
+    tau.c     ~ dgamma(1.0E-3,1.0E-3);
+    tau.alpha ~ dgamma(1.0E-3,1.0E-3);
+    tau.beta  ~ dgamma(1.0E-3,1.0E-3);
+
+    std.c<-sqrt(1/tau.c)
+}
