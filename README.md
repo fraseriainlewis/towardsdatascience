@@ -13,6 +13,6 @@ R CMD BATCH --vanilla blog_GompertzSDE.R log.R # note as coded this takes ~ 1hr 
 ```
 ## August 2021: "Variational Bayesian inference and normalizing flows - an introductory example"
 ## Folder **BayesVIOne**
-- This contains a Jupyter notebook **rats_lm_vi** which is a self-contained workbook contain all modeling code. 
+- This contains a Jupyter notebook **rats_lm_vi_github** which is a self-contained workbook contain all modeling code. 
 - The notebook was originally run in Google Colab and is the recommended way to run the code. Save to google drive and open directly in colab. It should also work in Jupyter but this has not been tested
 - A sub-folder **jags** has the various small files needed to run the jags MCMC analysis. These results - in CODAchain1.txt are hard coded into the Jupyter notebook above. For different ways to install jags see https://mcmc-jags.sourceforge.io/  
