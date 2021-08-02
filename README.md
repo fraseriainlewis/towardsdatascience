@@ -11,7 +11,7 @@ R CMD BATCH --vanilla blog_GompertzSDE.R log.R # note as coded this takes ~ 1hr 
 # or source blog_GompertzSDE.R in R Studio 
 # after setting working directory to towardsdatascience/BayesDiffOne
 ```
-## August 2021: "Variational Bayesian inference and normalizing flows - an introductory example"
+## August 2021: "Variational Bayesian inference with normalizing flows: a simple example"
 ## Folder **BayesVIOne**
 - This contains a Jupyter notebook **rats_lm_vi_github** which is a self-contained workbook contain all modeling code. 
 - The notebook was originally run in Google Colab and is the recommended way to run the code. Save to google drive and open directly in colab. It should also work in Jupyter but this has not been tested
