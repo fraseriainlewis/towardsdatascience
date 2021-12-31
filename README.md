@@ -2,7 +2,7 @@
 
 ## Jan 2022: "Modeling biological systems in space and time"
 ## Folder **PDEOne**
- 
+- This contains two main code files, both designed to be run in R via Rcpp - see the top line in the code. 
 
 ## August 2021: "Variational Bayesian inference with normalizing flows: a simple example"
 ## Folder **BayesVIOne**
