@@ -1,0 +1,55 @@
+---
+title: "Untitled"
+author: "F. Lewis"
+date: "3/27/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. 
+
+\begin{eqnarray}\frac{\partial n}{\partial t} &=& r n (1-\frac{n}{K}) + D\frac{\partial^2 n}{\partial x^2}, \quad 0 < x < L,\\\\
+n(0,t)&=&0,\\
+n(L,t)&=&0,\\
+n(x,0)&=&n_0(x).\end{eqnarray}
+
+
+\vspace{2cm}
+
+\begin{eqnarray} dx(t)&=&\alpha x(t) \left(1-\frac{x(t)}{\beta}\right)dt+\sqrt{\alpha x(t)}dW(t),\\\\
+
+\frac{\partial f}{\partial t} &=& \frac{\alpha}{2}\left(\frac{\partial^2(x f)}{\partial x^2}\right)-\alpha\left(\frac{\partial(x \left(1-\frac{x}{\beta}\right)f)}{\partial x}\right),\\\\
+\alpha x \left(1-\frac{x}{\beta}\right)f(x,t)&=&\frac{\alpha}{2}\left(\frac{\partial(x f(x,t))}{\partial x}\right)\quad\mbox{for}\quad x = L_l,L_u, \\
+f(x,t_0)&=&\delta({x-X_0}).\end{eqnarray}
+
+
+\begin{eqnarray} dn(t)&=&\alpha n(t) \left(1-\frac{n(t)}{\beta}\right)dt+\sqrt{\alpha n(t)}dW(t),\\\\
+
+\frac{\partial f}{\partial t} &=& \frac{\alpha}{2}\left(\frac{\partial^2(n f)}{\partial n^2}\right)-\alpha\left(\frac{\partial(n \left(1-\frac{n}{\beta}\right)f)}{\partial n}\right),\\\\
+\alpha n \left(1-\frac{n}{\beta}\right)f(n,t)&=&\frac{\alpha}{2}\left(\frac{\partial(n f(n,t))}{\partial n}\right)\quad\mbox{for}\quad n = L_l,L_u, \\
+f(n,t_0)&=&\delta({n-n_0}).\end{eqnarray}
+
+
